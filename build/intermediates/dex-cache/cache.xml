@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/bryan/.android/build-cache/c58d41af59564f1a522d30b9fea62c7c10dd11dd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Users/bryan/Documents/CST/COMP 3717/Android Projects/Fyndit/app/build/intermediates/pre-dexed/debug/classes_be1b6d315c7b1d810e7bdcd4f10e5e588250fdd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bryan/.android/build-cache/35b200111a3a9880e6c10b59ab2524603834575e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5684cffaa6e2bba5ad9d4a4da6c31a155ccb5391">
+        <dex dex="/Users/bryan/Documents/CST/COMP 3717/Android Projects/Fyndit/app/build/intermediates/pre-dexed/debug/classes_2b8eac8a91205bb06e489d979bf097915c118dc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bryan/.android/build-cache/9531a44db4184836962eef60bc74f4de6c425cc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/bryan/Documents/CST/COMP 3717/Android Projects/Fyndit/app/build/intermediates/pre-dexed/debug/classes_5656c3875201915059498d0ea9742ef4a54511f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/bryan/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.9/e4362e62f1ba92e360b197d6d7ffae67e5ecae9a/rxjava-1.1.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e4362e62f1ba92e360b197d6d7ffae67e5ecae9a">
+        <dex dex="/Users/bryan/Documents/CST/COMP 3717/Android Projects/Fyndit/app/build/intermediates/pre-dexed/debug/rxjava-1.1.9_b5f61d8d1c11b34649a99d7af2ff46997f4f856f.jar" />
+    </item>
+
+</items>
