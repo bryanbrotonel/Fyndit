@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="swipedeck-2.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/35b200111a3a9880e6c10b59ab2524603834575e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/35b200111a3a9880e6c10b59ab2524603834575e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daprlabs.aaron/swipedeck/2.0.6/dacaad8da807355dbb8bda31d1d6981a0a955580/swipedeck-2.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -15,46 +15,13 @@
         android:layout_marginTop="34dp" android:id="@+id/question"/>
 
     <Button
-        android:text="@string/about"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp" android:id="@+id/about"
-        android:layout_marginStart="24dp" android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/bar"/>
-
-    <Button
-        android:text="@string/bar"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp" android:id="@+id/bar"
-        android:layout_above="@+id/about" android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:text="@string/cafe"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cafe"
-        android:layout_centerVertical="true" android:layout_toStartOf="@+id/bar"/>
-
-    <Button
-        android:text="@string/park"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/park"
-        android:layout_alignBaseline="@+id/cafe" android:layout_alignBottom="@+id/cafe"
-        android:layout_toEndOf="@+id/bar"/>
-
-    <Button
         android:text="@string/dropin"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="90dp" android:id="@+id/dropin" android:layout_above="@+id/cafe"
-        android:layout_alignStart="@+id/cafe"/>
+        android:layout_alignStart="@+id/cafe"
+        android:onClick="onClickBtn"/>
 
     <Button
         android:text="@string/shopping"
@@ -63,5 +30,47 @@
         android:layout_height="wrap_content"
         android:id="@+id/shopping"
         android:layout_alignBaseline="@+id/dropin" android:layout_alignBottom="@+id/dropin"
-        android:layout_alignStart="@+id/park"/>
+        android:layout_alignStart="@+id/park"
+        android:onClick="onClickBtn"/>
+
+
+    <Button
+        android:text="@string/cafe"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cafe"
+        android:layout_centerVertical="true" android:layout_toStartOf="@+id/bar"
+        android:onClick="onClickBtn"/>
+
+    <Button
+        android:text="@string/park"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/park"
+        android:layout_alignBaseline="@+id/cafe" android:layout_alignBottom="@+id/cafe"
+        android:layout_toEndOf="@+id/bar"
+        android:onClick="onClickBtn"/>
+
+
+    <Button
+        android:text="@string/bar"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp" android:id="@+id/bar"
+        android:layout_above="@+id/about" android:layout_centerHorizontal="true"
+        android:onClick="onClickBtn"/>
+
+
+    <Button
+        android:text="@string/about"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp" android:id="@+id/about"
+        android:layout_marginStart="24dp" android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/bar"/>
+
 </RelativeLayout>
