@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Fyndit - New Westminster</string>
+    <string name="question">What are you finding today?</string>
+    <string name="dropin">Drop-In</string>
+    <string name="shopping">Shopping</string>
+    <string name="cafe">Cafe</string>
+    <string name="park">Park</string>
+    <string name="bar">Bar</string>
+    <string name="about">About</string>
+
 </resources>
