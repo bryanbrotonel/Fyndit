@@ -1,2 +1,2 @@
-# Fyndit---New-Westminster
-Fyndit, for New Westminster
+# Fyndit
+Fyndit - New Westminster
