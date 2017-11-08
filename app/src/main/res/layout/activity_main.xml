@@ -3,74 +3,87 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="ca.bcit.fyndit.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="ca.bcit.fyndit.MainActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:text="@string/question"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" android:id="@+id/question"/>
-
-    <Button
-        android:text="@string/dropin"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
+        android:id="@+id/Welcome"
+        android:text="@string/welcome"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="90dp" android:id="@+id/dropin" android:layout_above="@+id/cafe"
-        android:layout_alignStart="@+id/cafe"
-        android:onClick="onClickBtn"/>
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout"/>
 
-    <Button
-        android:text="@string/shopping"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/shopping"
-        android:layout_alignBaseline="@+id/dropin" android:layout_alignBottom="@+id/dropin"
-        android:layout_alignStart="@+id/park"
-        android:onClick="onClickBtn"/>
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true" android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/recreationbtn"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recreationPrimary"
+            android:drawableStart="@drawable/ic_icons8_dumbbell"
+            android:drawableEnd="@drawable/ic_icons8_dumbbell"
+            android:drawableTint="@color/recreationSecondary"
+            android:text="@string/rec"
+            android:textSize="20sp"
+            android:textColor="@color/secondaryTextColor"
+            android:onClick="onClickCategory"/>
+
+        <Button
+            android:id="@+id/sportsbtn"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/sportsPrimary"
+            android:drawableStart="@drawable/ic_icons8_basketball"
+            android:drawableEnd="@drawable/ic_icons8_basketball"
+            android:drawableTint="@color/sportsSecondary"
+            android:text="@string/sports"
+            android:textSize="20sp"
+            android:textColor="@color/secondaryTextColor"
+            android:onClick="onClickCategory"/>
 
 
-    <Button
-        android:text="@string/cafe"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cafe"
-        android:layout_centerVertical="true" android:layout_toStartOf="@+id/bar"
-        android:onClick="onClickBtn"/>
+        <Button
+            android:id="@+id/parkbtn"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/parkPrimary"
+            android:drawableStart="@drawable/ic_icons8_oak_tree"
+            android:drawableEnd="@drawable/ic_icons8_oak_tree"
+            android:drawableTint="@color/parkSecondary"
+            android:gravity="center"
+            android:text="@string/park"
+            android:textSize="20sp"
+            android:textColor="@color/secondaryTextColor"
+            android:onClick="onClickCategory"/>
+    </LinearLayout>
 
-    <Button
-        android:text="@string/park"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/park"
-        android:layout_alignBaseline="@+id/cafe" android:layout_alignBottom="@+id/cafe"
-        android:layout_toEndOf="@+id/bar"
-        android:onClick="onClickBtn"/>
-
-
-    <Button
-        android:text="@string/bar"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp" android:id="@+id/bar"
-        android:layout_above="@+id/about" android:layout_centerHorizontal="true"
-        android:onClick="onClickBtn"/>
-
-
-    <Button
-        android:text="@string/about"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp" android:id="@+id/about"
-        android:layout_marginStart="24dp" android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/bar"/>
+        <TextView
+            android:id="@+id/About"
+            android:text="@string/about"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center|bottom"
+            android:layout_alignParentBottom="true"
+        android:onClick="onClickAbout"/>
 
 </RelativeLayout>

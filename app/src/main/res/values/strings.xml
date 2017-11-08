@@ -1,15 +1,23 @@
 <resources>
     <string name="app_name">Fyndit - New Westminster</string>
-    <string name="question">What are you finding today?</string>
+    <string name="welcome">Let\'s get active!</string>
     <string name="dropin">Drop-In</string>
-    <string name="shopping">Shopping</string>
-    <string name="cafe">Cafe</string>
-    <string name="park">Park</string>
-    <string name="bar">Bar</string>
+    <string name="rec">Recreation</string>
+    <string name="sports">Sports Fields</string>
+    <string name="park">Parks</string>
     <string name="about">About</string>
     <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="info">Info</string>
     <string name="share">Share</string>
     <string name="search">Search</string>
+    <string name="aboutUs">
+        Lorem ipsum dolor sit amet, volutpat arcu, libero lobortis. Feugiat augue, odio eget, dolor
+        vestibulum. Dolor luctus, vitae libero libero. Pede nulla nulla, lectus sit. Molestie wisi, sapien fusce eget.
+        Nulla tellus.\n\n
+        Pellentesque vestibulum augue, ut amet dolor. Id mauris. Dui ligula, urna facilisis non. Nec eu penatibus, nulla
+        hendrerit a. Leo auctor velit, condimentum justo, tempor ac.\n\n
+        Diam mauris amet, quam non. Et leo, nibh cursus. Ullam lectus. Ut aenean. Quam leo, libero cursus, mollis odio.
+    </string>
+    <string name="authors">Bryan Brotonel\nGagan Bahugun\nJeremy Wildsmith</string>
 </resources>

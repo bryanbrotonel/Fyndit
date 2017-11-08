@@ -7,5 +7,13 @@
   <color name="secondaryLightColor">#d0d8ff</color>
   <color name="secondaryDarkColor">#6e78a6</color>
   <color name="primaryTextColor">#000000</color>
-  <color name="secondaryTextColor">#000000</color>
+  <color name="secondaryTextColor">#ffffff</color>
+  <color name="descriptionTextColor">#666</color>
+  <color name="parkPrimary">#43a047</color>
+  <color name="parkSecondary">#00701a</color>
+  <color name="recreationPrimary">#e53935</color>
+  <color name="recreationSecondary">#ab000d</color>
+  <color name="sportsPrimary">#1e88e5</color>
+  <color name="sportsSecondary">#005cb2</color>
+
 </resources>
