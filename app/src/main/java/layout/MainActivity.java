@@ -1,13 +1,14 @@
-package ca.bcit.fyndit;
+package layout;
 
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
+import ca.bcit.fyndit.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.actionbar);
+
+        TextView actionBarTitle = (TextView)findViewById(R.id.action_bar_title);
+        actionBarTitle.setText(R.string.app_name);
+
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Righteous-Regular.ttf");
+
+        actionBarTitle.setTypeface(custom_font);
+
     }
 
 

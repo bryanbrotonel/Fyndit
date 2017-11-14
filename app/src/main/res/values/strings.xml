@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fyndit - New Westminster</string>
+    <string name="app_name">Fyndit</string>
     <string name="welcome">Let\'s get active!</string>
     <string name="dropin">Drop-In</string>
     <string name="rec">Recreation</string>
@@ -20,4 +20,7 @@
         Diam mauris amet, quam non. Et leo, nibh cursus. Ullam lectus. Ut aenean. Quam leo, libero cursus, mollis odio.
     </string>
     <string name="authors">Bryan Brotonel\nGagan Bahugun\nJeremy Wildsmith</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

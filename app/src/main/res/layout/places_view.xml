@@ -30,8 +30,7 @@
                 android:src="@drawable/placeholder"/>
 
             <TextView
-                android:text="@string/info"
-                android:id="@+id/textViewList"
+                android:id="@+id/placeName"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:textSize="40sp"
@@ -39,7 +38,6 @@
                 android:textAlignment="center"
                 android:gravity="fill"
                 android:textStyle="bold"
-                android:layout_weight="1"
                 android:layout_gravity="center_horizontal|top"/>
 
         </FrameLayout>

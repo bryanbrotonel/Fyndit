@@ -1,7 +1,8 @@
-package ca.bcit.fyndit;
+package layout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import ca.bcit.fyndit.R;
 
 public class AboutActivity extends AppCompatActivity {
 
