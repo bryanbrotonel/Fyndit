@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Fyndit</string>
-    <string name="welcome">Let\'s get active!</string>
-    <string name="dropin">Drop-In</string>
+    <string name="welcome">Choose an activity!</string>
     <string name="rec">Recreation</string>
+    <string name="shopping">Shopping</string>
+    <string name="cafe">Cafe</string>
     <string name="sports">Sports Fields</string>
     <string name="park">Parks</string>
     <string name="about">About</string>

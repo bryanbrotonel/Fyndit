@@ -13,6 +13,8 @@
   <color name="parkSecondary">#00701a</color>
   <color name="recreationPrimary">#e53935</color>
   <color name="recreationSecondary">#ab000d</color>
-  <color name="sportsPrimary">#1e88e5</color>
-  <color name="sportsSecondary">#005cb2</color>
+  <color name="shoppingPrimary">#1e88e5</color>
+  <color name="shoppingSecondary">#005cb2</color>
+    <color name="cafePrimary">#673ab7</color>
+    <color name="cafeSecondary">#320b86</color>
 </resources>
