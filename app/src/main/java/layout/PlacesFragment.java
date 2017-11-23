@@ -22,6 +22,8 @@ import java.util.Set;
 import ca.bcit.fyndit.R;
 
 public class PlacesFragment extends ListFragment {
+    LocationDetail[] values;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return super.onCreateView(inflater, container, savedInstanceState);
@@ -29,17 +31,19 @@ public class PlacesFragment extends ListFragment {
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        LocationDetail[] values = new LocationDetail[]{};
-        if(getArguments() != null) {
+        values = new LocationDetail[]{};
+        String dataString = getArguments() == null ? null : getArguments().getString("data");
+
+        if(dataString != null) {
             try {
-                JSONArray data = new JSONArray(getArguments().getString("data"));
+                JSONArray data = new JSONArray(dataString);
                 values = new LocationDetail[data.length()];
 
                 for(int i = 0; i < data.length(); i++) {
                     values[i] = LocationDetail.fromJson(data.getJSONObject(i));
                 }
             } catch (Exception e) {
-                throw new RuntimeException();
+                throw new RuntimeException(e);
             }
         }
         ArrayAdapter<LocationDetail> adapter = new ArrayAdapter<>(getActivity(),
@@ -54,10 +58,10 @@ public class PlacesFragment extends ListFragment {
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        showCardDialog();
+        showCardDialog(this.values[position]);
     }
 
-    public void showCardDialog() {
+    public void showCardDialog(LocationDetail d) {
 
         // DialogFragment.show() will take care of adding the fragment
         // in a transaction.  We also want to remove any currently showing
@@ -70,14 +74,12 @@ public class PlacesFragment extends ListFragment {
         ft.addToBackStack(null);
 
         TextView textView = (TextView)getView().findViewById(R.id.placeName);
-        String title = textView.getText().toString();
 
-
-        Toast.makeText(getActivity(), title,
+        Toast.makeText(getActivity(), d.getName(),
                 Toast.LENGTH_LONG).show();
 
         // Create and show the dialog.
-        DialogFragment newFragment = CardDialog.newInstance(title);
+        DialogFragment newFragment = CardDialog.newInstance(d);
         newFragment.show(ft, "dialog");
     }
 }

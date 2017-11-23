@@ -24,7 +24,8 @@ public class CategoryActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         Bundle bundle = new Bundle();
-        bundle.putString("data", intent.getStringExtra("data"));
+        String dataString = intent.getStringExtra("data");
+        bundle.putString("data", dataString);
         PlacesFragment fragInfo = new PlacesFragment();
         fragInfo.setArguments(bundle);
         getFragmentManager().beginTransaction().replace(R.id.places_fragment, fragInfo).commit();
