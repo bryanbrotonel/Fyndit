@@ -32,11 +32,14 @@ public class LocationDetail {
         return this.json;
     }
 
+<<<<<<< HEAD
     @Override
     public String toString() {
         return this.name;
     }
 
+=======
+>>>>>>> assets-issue-1
     public static LocationDetail fromJson(JSONObject o) throws JSONException {
         return new LocationDetail(o.getString("name"), o.getString("address"), o.getString("imageName"), o.toString());
     }

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Coming Home Café",
+    "address": "Coming Home Café New Westminster British Columbia",
+    "imageName": "1.jpg"
+  },
+  {
+    "name": "Take Five Cafe",
+    "address": "Take Five Cafe New Westminster British Columbia",
+    "imageName": "2.jpg"
+  },
+  {
+    "name": "Old Crow Coffee Co.",
+    "address": "Old Crow Coffee Co. New Westminster British Columbia",
+    "imageName": "3.jpg"
+  },
+  {
+    "name": "Java Jazz Cafe & Bistro",
+    "address": "Java Jazz Cafe & Bistro New Westminster British Columbia",
+    "imageName": "4.jpg"
+  }
+]
