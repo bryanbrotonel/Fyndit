@@ -32,13 +32,15 @@
             <TextView
                 android:id="@+id/placeName"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:textSize="40sp"
-                android:textIsSelectable="false"
-                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:background="#aeffffff"
                 android:gravity="fill"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal|top"/>
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textIsSelectable="false"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </FrameLayout>
 
