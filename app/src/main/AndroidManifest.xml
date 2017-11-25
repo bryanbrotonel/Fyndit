@@ -21,6 +21,9 @@
         </activity>
         <activity android:name="layout.AboutActivity">
         </activity>
+        <provider
+            android:name="providers.AssetsProvider"
+            android:authorities="ca.bcit.fyndit.assets" />
     </application>
 
 </manifest>
