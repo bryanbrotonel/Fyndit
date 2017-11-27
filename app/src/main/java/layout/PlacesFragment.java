@@ -1,31 +1,21 @@
 package layout;
 
 import android.app.*;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.location.Location;
 import android.os.Bundle;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import ca.bcit.fyndit.R;
 
@@ -109,9 +99,6 @@ public class PlacesFragment extends ListFragment {
         ft.addToBackStack(null);
 
         TextView textView = (TextView) getView().findViewById(R.id.placeName);
-
-        Toast.makeText(getActivity(), d.getName(),
-                Toast.LENGTH_LONG).show();
 
         // Create and show the dialog.
         DialogFragment newFragment = CardDialog.newInstance(d);

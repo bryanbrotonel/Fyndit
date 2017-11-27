@@ -1,10 +1,7 @@
 package layout;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.app.Fragment;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -17,10 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,16 +71,17 @@ public class CardDialog extends DialogFragment {
 
         shareFAB.setOnClickListener(new View.OnClickListener() {
 
+//            Floating Acition Bar onClick method
             @Override
             public void onClick(View view) {
-
+//                Place sharing
                 String shareBody = "Come with me to Fynd the " + detail.getName() +
                         " with the Fyndit - New West app!";
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
                 sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Come Fyndit with me!");
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.app_name)));
+                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.shareTitle)));
             }
         });
 
