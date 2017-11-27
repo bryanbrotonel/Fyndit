@@ -109,10 +109,7 @@ public class PlacesFragment extends ListFragment {
         ft.addToBackStack(null);
 
         TextView textView = (TextView) getView().findViewById(R.id.placeName);
-
-        Toast.makeText(getActivity(), d.getName(),
-                Toast.LENGTH_LONG).show();
-
+        
         // Create and show the dialog.
         DialogFragment newFragment = CardDialog.newInstance(d);
         newFragment.show(ft, "dialog");
