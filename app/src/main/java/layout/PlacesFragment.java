@@ -31,7 +31,8 @@ import ca.bcit.fyndit.R;
 
 public class PlacesFragment extends ListFragment {
     private static final String PLACEHOLDER_NAME = "assets/placeHolder.jpg";
-
+    private static final String ASSETS_BASE = "content://ca.bcit.fyndit.assets/";
+    
     List<LocationDetail> locationDetails = new ArrayList<>();
 
     @Override
@@ -81,7 +82,7 @@ public class PlacesFragment extends ListFragment {
             try {
                 HashMap<String, String> mapData = new HashMap<>();
                 mapData.put("name", detail.getName());
-                mapData.put("image", "content://ca.bcit.fyndit.assets/" + detail.getImageName());
+                mapData.put("image", ASSETS_BASE + detail.getImageName());
                 dataSet.add(mapData);
             } catch (Exception e) {
                 throw new RuntimeException(e);
