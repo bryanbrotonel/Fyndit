@@ -30,7 +30,6 @@ import java.util.Set;
 import ca.bcit.fyndit.R;
 
 public class PlacesFragment extends ListFragment {
-    private static final String PLACEHOLDER_NAME = "assets/placeHolder.jpg";
     private static final String ASSETS_BASE = "content://ca.bcit.fyndit.assets/";
     
     List<LocationDetail> locationDetails = new ArrayList<>();
