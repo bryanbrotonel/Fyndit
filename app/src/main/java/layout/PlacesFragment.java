@@ -1,27 +1,37 @@
 package layout;
 
 import android.app.*;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.Bundle;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import ca.bcit.fyndit.R;
 
 public class PlacesFragment extends ListFragment {
-    private static final String PLACEHOLDER_NAME = "assets/placeHolder.jpg";
-
+    private static final String ASSETS_BASE = "content://ca.bcit.fyndit.assets/";
+    
     List<LocationDetail> locationDetails = new ArrayList<>();
 
     @Override
@@ -71,7 +81,7 @@ public class PlacesFragment extends ListFragment {
             try {
                 HashMap<String, String> mapData = new HashMap<>();
                 mapData.put("name", detail.getName());
-                mapData.put("image", "content://ca.bcit.fyndit.assets/" + detail.getImageName());
+                mapData.put("image", ASSETS_BASE + detail.getImageName());
                 dataSet.add(mapData);
             } catch (Exception e) {
                 throw new RuntimeException(e);
@@ -99,7 +109,7 @@ public class PlacesFragment extends ListFragment {
         ft.addToBackStack(null);
 
         TextView textView = (TextView) getView().findViewById(R.id.placeName);
-
+        
         // Create and show the dialog.
         DialogFragment newFragment = CardDialog.newInstance(d);
         newFragment.show(ft, "dialog");
