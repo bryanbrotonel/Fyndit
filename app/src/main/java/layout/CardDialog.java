@@ -1,23 +1,21 @@
 package layout;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +27,8 @@ import ca.bcit.fyndit.R;
 
 public class CardDialog extends DialogFragment {
     private LocationDetail detail;
+    private ShareActionProvider shareActionProvider;
+
 
     public static CardDialog newInstance(LocationDetail detail) {
         CardDialog cardDialog = new CardDialog();
@@ -60,11 +60,28 @@ public class CardDialog extends DialogFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         ((TextView)view.findViewById(R.id.title)).setText(detail.getName());
         ((TextView)view.findViewById(R.id.textView)).setText(detail.getAddress());
+        FloatingActionButton shareFAB = (FloatingActionButton)view.findViewById(R.id.share);
 
         ((Button)view.findViewById(R.id.info)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CardDialog.this.onNavigate(view);
+            }
+        });
+
+        shareFAB.setOnClickListener(new View.OnClickListener() {
+
+//            Floating Acition Bar onClick method
+            @Override
+            public void onClick(View view) {
+//                Place sharing
+                String shareBody = "Come with me to Fynd the " + detail.getName() +
+                        " with the Fyndit - New West app!";
+                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Come Fyndit with me!");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.shareTitle)));
             }
         });
 
@@ -92,4 +109,5 @@ public class CardDialog extends DialogFragment {
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
+
 }

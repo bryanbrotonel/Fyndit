@@ -32,9 +32,10 @@
             <TextView
                 android:id="@+id/placeName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal|top"
-                android:background="#aeffffff"
+                android:background="#ae4c4c4c"
+                android:textColor="@color/secondaryTextColor"
                 android:gravity="fill"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -43,6 +44,7 @@
                 android:textStyle="bold" />
 
         </FrameLayout>
+
 
     </android.support.v7.widget.CardView>
 
