@@ -9,13 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="layout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="layout.CardActivity"/>
+        <activity android:name="layout.CategoryActivity">
+        </activity>
+        <activity android:name="layout.AboutActivity">
+        </activity>
+        <provider
+            android:name="providers.AssetsProvider"
+            android:authorities="ca.bcit.fyndit.assets" />
     </application>
 
 </manifest>

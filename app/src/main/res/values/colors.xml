@@ -3,9 +3,18 @@
   <color name="primaryColor">#ffc107</color>
   <color name="primaryLightColor">#fff350</color>
   <color name="primaryDarkColor">#c79100</color>
-  <color name="secondaryColor">#9ea7d8</color>
-  <color name="secondaryLightColor">#d0d8ff</color>
-  <color name="secondaryDarkColor">#6e78a6</color>
-  <color name="primaryTextColor">#000000</color>
-  <color name="secondaryTextColor">#000000</color>
+  <color name="secondaryColor">#448aff</color>
+  <color name="secondaryLightColor">#83b9ff</color>
+  <color name="secondaryDarkColor">#005ecb</color>
+  <color name="primaryTextColor">#212121</color>
+  <color name="secondaryTextColor">#fafafa</color>
+  <color name="descriptionTextColor">#666</color>
+  <color name="parkPrimary">#43a047</color>
+  <color name="parkSecondary">#00701a</color>
+  <color name="recreationPrimary">#e53935</color>
+  <color name="recreationSecondary">#ab000d</color>
+  <color name="shoppingPrimary">#1e88e5</color>
+  <color name="shoppingSecondary">#005cb2</color>
+    <color name="cafePrimary">#673ab7</color>
+    <color name="cafeSecondary">#320b86</color>
 </resources>
