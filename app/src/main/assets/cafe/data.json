@@ -1,7 +1,7 @@
 [
   {
-    "name": "Coming Home Café",
-    "address": "Coming Home Café New Westminster British Columbia",
+    "name": "Coming Home Cafï¿½",
+    "address": "Coming Home Cafï¿½ New Westminster British Columbia",
     "imageName": "1.jpg"
   },
   {
@@ -18,5 +18,55 @@
     "name": "Java Jazz Cafe & Bistro",
     "address": "Java Jazz Cafe & Bistro New Westminster British Columbia",
     "imageName": "4.jpg"
+  },
+  {
+    "name": "Waves Coffee House",
+    "address": "Waves Coffee House New Westminster British Columbia",
+    "imageName": "5.jpg"
+  },
+  {
+    "name": "Amelia Cafe",
+    "address": "Amelia Cafe New Westminster British Columbia",
+    "imageName": "6.jpg"
+  },
+  {
+    "name": "Happy Mom's Cafe",
+    "address": "Happy Mom's Cage New Westminster British Columbia",
+    "imageName": "7.jpg"
+  },
+  {
+    "name": "The Hide Out Cafe",
+    "address": "the hide out cafe New Westminster British Columbia",
+    "imageName": "8.jpg"
+  },
+  {
+    "name": "Belmont Cafe",
+    "address": "Belmont Cafe New Westminster British Columbia",
+    "imageName": "9.jpg"
+  },
+  {
+    "name": "Gourmet Cup",
+    "address": "Gourmet Cup New Westminster British Columbia",
+    "imageName": "10.jpg"
+  },
+  {
+    "name": "TMFOX Cafe",
+    "address": "TMFOX Cafe New Westminster British Columbia",
+    "imageName": "11.jpg"
+  },
+  {
+    "name": "Hive Cafe",
+    "address": "Hive Cafe New Westminster British Columbia",
+    "imageName": "12.jpg"
+  },
+  {
+    "name": "Homespun Cafe",
+    "address": "Homespun Cafe New Westminster British Columbia",
+    "imageName": "13.jpg"
+  },
+  {
+    "name": "Jam's Cafe",
+    "address": "Jam's Cafe New Westminster British Columbia",
+    "imageName": "14.jpg"
   }
 ]

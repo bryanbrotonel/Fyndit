@@ -13,12 +13,9 @@
     <string name="share">Share</string>
     <string name="search">Search</string>
     <string name="aboutUs">
-        Lorem ipsum dolor sit amet, volutpat arcu, libero lobortis. Feugiat augue, odio eget, dolor
-        vestibulum. Dolor luctus, vitae libero libero. Pede nulla nulla, lectus sit. Molestie wisi, sapien fusce eget.
-        Nulla tellus.\n\n
-        Pellentesque vestibulum augue, ut amet dolor. Id mauris. Dui ligula, urna facilisis non. Nec eu penatibus, nulla
-        hendrerit a. Leo auctor velit, condimentum justo, tempor ac.\n\n
-        Diam mauris amet, quam non. Et leo, nibh cursus. Ullam lectus. Ut aenean. Quam leo, libero cursus, mollis odio.
+        We are Team Stack, and this app was created to support New Westminster businesses. The app
+        focuses on cafes, rec centers, parks, and malls. We hope that this app encourages people to visit
+        these New Westminster businesses and improve the experience for people visiting New Westminster.
     </string>
     <string name="authors">Bryan Brotonel\nGagan Bahugun\nJeremy Wildsmith</string>
 
